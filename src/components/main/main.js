@@ -52,9 +52,16 @@ const data =[
                 <table>
                     <thead>
                             <tr>
-                                <th>Фамиля</th>
-                                <th>Имя</th>
-                                <th>Отчество</th>
+                                <th>Пациент</th>
+                                <th>Возраст</th>
+                                <th>Дата рождения</th>
+                                <th>Регион</th>
+                                <th>Улица</th>
+                                <th>Адрес</th>
+                                <th>Телефон</th>
+                                <th>E-mail</th>
+                                <th>Номер карты</th>
+                                <th>Номер истории болезни</th>
                                 <th>Подроробне</th>
                             </tr>
                     </thead>
@@ -66,6 +73,13 @@ const data =[
                                          <tr id={el.id}>
                                             <td>{el.name}</td>
                                             <td>{el.surname}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
+                                            <td>{el.fathername}</td>
                                             <td>{el.fathername}</td>
                                             <td><Link className="site-main__link" to={"/"}>Подроробне</Link></td>
                                         </tr>
