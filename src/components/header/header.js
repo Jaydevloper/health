@@ -1,8 +1,10 @@
 import "./site-header.scss";
 import account from "../../assets/img/account.svg";
-import { Fragment, useState } from "react";
+import { Fragment, useContext, useState } from "react";
+import { Contextvalue } from "../../context/context";
 function Header(){
 const [open,setOpen] = useState(false)
+const {setFilter} = useContext(Contextvalue)
   const regionArr = [
     { id: 1, admin_name: "Toshkent shahri" },
     {
@@ -51,7 +53,7 @@ const [open,setOpen] = useState(false)
       <>
         <header className="site-header container">
           <div className="site-header__wrraper">
-            <select className="site-header__filter">
+            <select className="site-header__filter" onChange={(e)=> setFilter(e.target.value)}>
               <option value={"ВСЕ"}>ВСЕ</option>
               {
                 // eslint-disable-next-line
