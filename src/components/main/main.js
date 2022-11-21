@@ -46,6 +46,7 @@ const data =[
         fathername:"Falonchayeva"
     },
 ]
+
     return(
         <>
             <main className="site-main container">
