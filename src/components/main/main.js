@@ -79,26 +79,26 @@ const {filter} = React.useContext(Contextvalue )
             </TableHead>
             <TableBody>
               {
-                data?.map(row =>{
-                  if (row.admin_name.includes(filter) && filter){
+                // eslint-disable-next-line
+                data?.map((row) => {
+                  if (row.admin_name.includes(filter) && filter) {
                     return (
-                        <TableRow
-                          key={row.id}
-                          sx={{
-                            "&:last-child td, &:last-child th": { border: 0 },
-                          }}
-                        >
-                          <TableCell component="th" scope="row">
-                            {row.id}
-                          </TableCell>
-                          <TableCell align="right">{row.name}</TableCell>
-                          <TableCell align="right">{row.name}</TableCell>
-                          <TableCell align="right">{row.name}</TableCell>
-                          <TableCell align="right">{row.admin_name}</TableCell>
-                        </TableRow>
+                      <TableRow
+                        key={row.id}
+                        sx={{
+                          "&:last-child td, &:last-child th": { border: 0 },
+                        }}
+                      >
+                        <TableCell component="th" scope="row">
+                          {row.id}
+                        </TableCell>
+                        <TableCell align="right">{row.name}</TableCell>
+                        <TableCell align="right">{row.name}</TableCell>
+                        <TableCell align="right">{row.name}</TableCell>
+                        <TableCell align="right">{row.admin_name}</TableCell>
+                      </TableRow>
                     );
-                  }
-                  else if (!filter || filter=== "ВСЕ"){
+                  } else if (!filter || filter === "ВСЕ") {
                     return (
                       <TableRow
                         key={row.id}
