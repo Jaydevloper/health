@@ -17,7 +17,7 @@ const [open,setOpen] = useState(false)
                         }
                     </button> 
                 </div>
-                <div className={open?"site-main__out ":"site-main__out site-main__out--open"}>
+                <div className={open?"site-header__out ":"site-header__out site-header__out--open"}>
                     <p className="site-main__page">Выход</p>
                 </div>
             </header>
